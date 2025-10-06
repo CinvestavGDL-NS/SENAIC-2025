@@ -234,10 +234,7 @@ species person skills: [moving]
 		
 		
 		//*********** AQUÍ AGREGA EL CODIGO FALTANTE PARA LA APP  y cambio de decisión***************
-		if transport = "Auto" and traffic_level_app >= traffic_limit{
-				transport 	<-	rnd_choice(["Peaton"::0.1,"MiBici_prob"::0.8, "Auto"::0.1]);
-				frustration <- frustration  + int(flip(0.9));
-		}		
+		
 		//*******************************************************************************************************
 		state <- "transport selected";
 	}
